@@ -1,0 +1,16 @@
+{
+  "name": "lightcode",
+  "version": "1.0.0",
+  "description": "A Landing page by using tailwind css cli",
+  "license": "ISC",
+  "author": "KarthickRamAlagar",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "dependencies": {
+    "tailwindcss": "^4.1.10"
+  }
+}

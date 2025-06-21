@@ -1,0 +1,45 @@
+@import "tailwindcss";
+@theme :{
+    --color-primary:#01051e;
+    --color-primary-light:#020726;
+    --color-primary-dark:#010417;
+    --color-secondary:#ff7d3b;
+    --color-gray:#333;
+    --color-white:#fff;
+    --color-blob:#A427DF;
+}
+
+@layer{
+    .alignment{
+        @apply   mx-auto p-[20px] md:p-[50px] 
+    }
+}
+.user-pic.active-pic {
+    border:2px solid #ff7d3b
+}
+.user-text{
+    display: none;
+}
+.user-text.active-text{
+    display: block;
+    animation:moveup 1s linear forwards;
+}
+
+.user-pic{
+    transition:all 0.2s ease;
+}
+@keyframes moveup{
+    0%{
+     margin-top:40px;
+     opacity:0;
+    }
+
+     50%{
+     margin-top:20px;
+     opacity:0.1;
+    }
+     100%{
+     margin-top:0px;
+     opacity:1;
+    }
+}

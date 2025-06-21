@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="icon" type="image/png" href="./images/favIcon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Banking Website</title>
+  </head>
+  <body class="bg-primary text-white tracking-wider">
+    <header>
+      <nav
+        class="container mx-auto p-[20px] md:p-[50px] flex justify-between items-center"
+        data-aos="fade-down"
+        id="nav"
+      >
+        <div class="py-5 text-secondary font-bold text-3xl">
+          <a href="#home"> <span class="text-white">Light</span>Code </a>
+        </div>
+        <div>
+          <ul
+            class="hidden lg:flex items-center space-x-8 text-xl cursor-pointer pl-4"
+          >
+            <li>
+              <a
+                href="#home"
+                class="hover:text-secondary transition-colors duration-200 ease-in"
+                id="hlink"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#features"
+                class="hover:text-secondary transition-colors duration-200 ease-in"
+                id="hlink"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a
+                href="#testimonial"
+                class="hover:text-secondary transition-colors duration-200 ease-in"
+                id="hlink"
+                >Testimonial</a
+              >
+            </li>
+            <li>
+              <a
+                href="#pricing"
+                class="hover:text-secondary transition-colors duration-200 ease-in"
+                id="hlink"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a
+                href="#blob"
+                class="hover:text-secondary transition-colors duration-200 ease-in"
+                id="hlink"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="hover:text-secondary transition-colors duration-200 ease-in"
+                id="hlink"
+                >Contact</a
+              >
+            </li>
+
+            <li>
+              <button
+                class="bg-secondary px-9 py-3 rounded-md capitalize font-bold hover:opacity-80 ease-in-200 cursor-pointer md:px-5 md:py-2"
+              >
+                Free Trial
+              </button>
+            </li>
+          </ul>
+        </div>
+        <!-- Mobile Screen -->
+        <div id="hamburger" class="lg:hidden cursor-pointer">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div
+          id="menu"
+          class="hidden bg-primary-dark h-screen absolute inset-0 z-50 w-full absolute"
+        >
+          <ul
+            class="h-full grid place-items-center p-20 text-xl cursor-pointer"
+          >
+            <li>
+              <a
+                href="#home"
+                class="hover:text-secondary transition-colors duration-200 ease-in"
+                id="hlink"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#features"
+                class="hover:text-secondary transition-colors duration-200 ease-in"
+                id="hlink"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a
+                href="#testimonial"
+                class="hover:text-secondary transition-colors duration-200 ease-in"
+                id="hlink"
+                >Testimonial</a
+              >
+            </li>
+            <li>
+              <a
+                href="#pricing"
+                class="hover:text-secondary transition-colors duration-200 ease-in"
+                id="hlink"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a
+                href="#blob"
+                class="hover:text-secondary transition-colors duration-200 ease-in"
+                id="hlink"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="hover:text-secondary transition-colors duration-200 ease-in"
+                id="hlink"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <button
+                class="bg-secondary px-9 py-3 rounded-md capitalize font-bold hover:opacity-80 ease-in-200 cursor-pointer md:px-5 md:py-2"
+              >
+                Free Trial
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Home -->
+
+    <main>
+      <section
+        id="home"
+        class="relative cursor-pointer"
+        onclick="location.href='#nav'"
+      >
+        <div
+          class="w-80 h-80 bg-blob absolute top-0 -left-5 -z-10 blur-3xl opacity-30 overflow-hidden rounded-full"
+        ></div>
+        <div
+          class="w-80 h-80 bg-secondary absolute bottom-10 right-0 -z-10 blur-3xl opacity-30 overflow-hidden rounded-full"
+        ></div>
+        <div class="container mx-auto p-[20px] md:p-[50px] py-20">
+          <div class="flex flex-col items-center z-20 md:flex-row">
+            <!-- left section -->
+            <div
+              class="text-center mb-12 md:text-left md:w-1/2 md:pr-10"
+              data-aos="fade-right"
+            >
+              <h1 class="text-3xl md:text-5xl font-bold leading-snug mb-5">
+                Awesome App for Your Financial.
+              </h1>
+              <p class="leading-relaxed mb-10">
+                This should be used to tell a story and let your users know a
+                little more about app and it's use . How can benifit them.
+              </p>
+              <button
+                class="bg-secondary px-9 py-3 rounded-md capitalize font-bold hover:opacity-80 ease-in-200 cursor-pointer md:px-5 md:py-2"
+              >
+                download app
+              </button>
+            </div>
+            <!-- Right section -->
+            <div class="md:w-1/2" data-aos="zoom-out-up">
+              <img src="./images/hero4.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- features -->
+      <section
+        id="features"
+        class="bg-primary-light cursor-pointer"
+        onclick="location.href='#nav'"
+      >
+        <div class="container mx-auto p-[20px] md:p-[50px] py-20">
+          <div class="text-center m-auto mb-20 md:w-1/2" data-aos="flip-up">
+            <h4 class="font-bold text-secondary mb-4 text-2xl">Our Features</h4>
+            <h1 class="capitalize text-3xl md:text-4xl font-bold leading-snug">
+              easy to manage your all payments by our app
+            </h1>
+          </div>
+
+          <!-- cards -->
+          <div
+            class="grid lg:grid-cols-3 md:grid-cols-2 gap-12 lg:gap-8 px-4 sm:px-6 lg:px-8"
+          >
+            <!-- card 1 -->
+            <div
+              class="border-2 border-solid border-color-gray text-center py-30 px-5 rounded-2xl cursor-pointer hover:bg-primary-dark ease-in duration-300"
+              data-aos="flip-right"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
+            >
+              >
+              <div class="bg-secondary inline-block rounded-2xl py-5 px-6">
+                <i class="fa-solid fa-calendar-days text-4xl"></i>
+              </div>
+              <h3 class="text-xl font-bold py-4">Expense Tracking</h3>
+              <p class="leading-relaxed">
+                We use an application designed a testing gnose to keep away
+              </p>
+            </div>
+            <!-- card 2 -->
+            <div
+              class="bg-primary-dark border-2 border-solid border-color-gray text-center py-30 px-5 rounded-2xl cursor-pointer hover:bg-primary-light ease-in duration-300"
+              data-aos="fade-up"
+              data-aos-easing="ease-in-cubic"
+              data-aos-duration="2000"
+            >
+              <div class="bg-secondary inline-block rounded-2xl py-5 px-6">
+                <i class="fa-solid fa-hand-holding-dollar text-4xl"></i>
+              </div>
+              <h3 class="text-xl font-bold py-4">Finance Snapshot</h3>
+              <p class="leading-relaxed">
+                We use an application designed a testing gnose to keep away
+              </p>
+            </div>
+            <!-- card 3 -->
+            <div
+              class="border-2 border-solid border-color-gray text-center py-30 px-5 rounded-2xl cursor-pointer hover:bg-primary-dark ease-in duration-300"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
+            >
+              >
+              <div class="bg-secondary inline-block rounded-2xl py-5 px-6">
+                <i class="fa-solid fa-circle-info text-4xl"></i>
+              </div>
+              <h3 class="text-xl font-bold py-4">Support 24/24</h3>
+              <p class="leading-relaxed">
+                We use an application designed a testing gnose to keep away
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Saving money section -->
+      <section id="home" class="relative">
+        <div
+          class="w-100 h-100 bg-blob shadow-xl absolute top-0 -left-5 -z-10 blur-3xl opacity-30 overflow-hidden rounded-full"
+        ></div>
+        <div
+          class="w-100 h-100 bg-secondary shadow-xl absolute bottom-10 right-0 -z-10 blur-3xl opacity-30 overflow-hidden rounded-full"
+        ></div>
+        <div class="container mx-auto p-[20px] md:p-[50px] py-20">
+          <div class="flex flex-col items-center z-20 md:flex-row">
+            <!-- left section -->
+            <div
+              class="md:w-1/2"
+              data-aos="zoom-out-up"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
+            >
+              >
+              <img src="./images/hero3.png" alt="" />
+            </div>
+            <!-- right section -->
+            <div
+              class="text-center mb-12 md:text-left md:w-1/2 md:pr-10"
+              data-aos="fade-left"
+            >
+              <h4 class="font-bold text-secondary mb-4 text-2xl">
+                Our Features
+              </h4>
+              <h1
+                class="text-3xl md:text-5xl font-bold leading-snug mb-5 capitalize"
+              >
+                best finance app to save ypur money.
+              </h1>
+              <p class="leading-relaxed mb-10">
+                best finance app ever in the world .Easy to use and very user
+                friendly for mobile banking.You can control your card easily and
+                send money some one just one click.
+              </p>
+              <button
+                class="bg-secondary px-9 py-3 rounded-md capitalize font-bold hover:opacity-80 ease-in-200 cursor-pointer md:px-5 md:py-2"
+              >
+                read more
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- how its work -->
+      <section id="how-it-works" class="bg-primary-light">
+        <div class="container mx-auto p-[20px] md:p-[50px] py-20">
+          <div
+            class="text-center m-auto mb-20 md:w-1/2"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <h4 class="font-bold text-secondary mb-4 text-2xl">How it Works</h4>
+            <h1 class="capitalize text-3xl md:text-4xl font-bold leading-snug">
+              Grow Up Your Money Saving
+            </h1>
+          </div>
+
+          <div
+            class="flex flex-col items-center justify-between space-y-6 md:flex-row md:space-y-0 md:space-x-6"
+          >
+            <!-- card 1 -->
+            <div
+              class="text-center cursor-pointer"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+            >
+              <div
+                class="relative bg-primary-dark inline-block px-6 py-3 rounded-lg cursor-pointer hover:bg-secondary ease-in duration -200"
+              >
+                <p
+                  data-aos="fade-left"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="1200"
+                  class="relative text-6xl lg:after:content-[''] lg:after:absolute lg:after:top-4 lg:after:left-32 2xl:after:left-52 lg:after:bg-[url('./images/line.png')] lg:after:bg-no-repeat lg:after:w-52 lg:after:h-7"
+                >
+                  1
+                </p>
+              </div>
+              <h3 class="text-xl font-bold py-4">Install The App</h3>
+              <p class="leading-relaxed">
+                We use an application designed a testing gnose to keep away
+              </p>
+            </div>
+            <!-- card 2 -->
+            <div
+              class="text-center cursor-pointer"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1400"
+            >
+              <div
+                class="relative bg-primary-dark inline-block px-6 py-3 rounded-lg cursor-pointer bg-secondary"
+              >
+                <p
+                  data-aos="fade-left"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="1600"
+                  class="relative text-6xl lg:after:content-[''] lg:after:absolute lg:after:top-10 lg:after:left-32 2xl:after:left-52 lg:after:bg-[url('./images/line-bottom.png')] lg:after:bg-no-repeat lg:after:w-52 lg:after:h-7"
+                >
+                  2
+                </p>
+              </div>
+              <h3 class="text-xl font-bold py-4">Setup Your Profile</h3>
+              <p class="leading-relaxed">
+                We use an application designed a testing gnose to keep away
+              </p>
+            </div>
+            <!-- card 3 -->
+            <div
+              class="text-center cursor-pointer"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1800"
+            >
+              <div
+                class="relative bg-primary-dark inline-block px-6 py-3 rounded-lg cursor-pointer hover:bg-secondary ease-in duration -200"
+              >
+                <p class="text-6xl">3</p>
+              </div>
+              <h3 class="text-xl font-bold py-4">Enjoy The Features</h3>
+              <p class="leading-relaxed">
+                We use an application designed a testing gnose to keep away
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- testimonials -->
+      <section id="testimonial">
+        <div class="container mx-auto p-[20px] md:p-[50px] py-20">
+          <div
+            class="text-center m-auto mb-20 md:w-1/2"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <h4 class="font-bold text-secondary mb-4 text-2xl">User Review</h4>
+            <h1 class="capitalize text-3xl md:text-4xl font-bold leading-snug">
+              what clients say abour our app after use it
+            </h1>
+          </div>
+
+          <!-- review  container -->
+          <div class="mt-8">
+            <div class="flex items-center justify-center flex-wrap">
+              <img
+                src="./images/user1.jpg"
+                alt="user1"
+                class="h-30 w-30 rounded-full p-1 m-3 cursor-pointer user-pic active-pic"
+                data-aos="fade-left"
+                onclick="showReview()"
+              />
+              <img
+                src="./images/user2.jpg"
+                alt="user2"
+                class="h-30 w-30 rounded-full p-1 m-3 cursor-pointer user-pic"
+                data-aos="fade-left"
+                onclick="showReview()"
+              />
+              <img
+                src="./images/user3.jpg"
+                alt="user3"
+                class="h-30 w-30 rounded-full p-1 m-3 cursor-pointer user-pic"
+                data-aos="fade-up"
+                onclick="showReview() "
+              />
+              <img
+                src="./images/user4.jpg"
+                alt="user4"
+                class="h-30 w-30 rounded-full p-1 m-3 cursor-pointer user-pic"
+                data-aos="fade-right"
+                onclick="showReview()"
+              />
+              <img
+                src="./images/user5.jpg"
+                alt="user5"
+                class="h-30 w-30 rounded-full p-1 m-3 cursor-pointer user-pic"
+                data-aos="fade-right"
+                onclick="showReview()"
+              />
+            </div>
+            <div
+              class="grid place-item-center text-center m-auto md:w-4/5 min-h-[40vh]"
+            >
+              <div class="user-text active-text">
+                <p class="md:text-2xl mb-6">
+                  "This should be used to tell a story an include any
+                  testimonials you might have about your product or service for
+                  your clients!"
+                </p>
+                <h4 class="font-bold text-secondary mb-1">Markin Nesus</h4>
+                <p>IOS Developer</p>
+              </div>
+              <div class="user-text">
+                <p class="md:text-2xl mb-6">
+                  "This should be used to tell a story an include any
+                  testimonials you might have about your product or service for
+                  your clients!"
+                </p>
+                <h4 class="font-bold text-secondary mb-1">Vera Duncan</h4>
+                <p>Flutter Developer</p>
+              </div>
+              <div class="user-text">
+                <p class="md:text-2xl mb-6">
+                  "This should be used to tell a story an include any
+                  testimonials you might have about your product or service for
+                  your clients!"
+                </p>
+                <h4 class="font-bold text-secondary mb-1">Pirtle Karol</h4>
+                <p>Android Developer</p>
+              </div>
+              <div class="user-text">
+                <p class="md:text-2xl mb-6">
+                  "This should be used to tell a story an include any
+                  testimonials you might have about your product or service for
+                  your clients!"
+                </p>
+                <h4 class="font-bold text-secondary mb-1">Mark Joe</h4>
+                <p>React Developer</p>
+              </div>
+              <div class="user-text">
+                <p class="md:text-2xl mb-6">
+                  "This should be used to tell a story an include any
+                  testimonials you might have about your product or service for
+                  your clients!"
+                </p>
+                <h4 class="font-bold text-secondary mb-1">Leila Domniuc</h4>
+                <p>Next Developer</p>
+              </div>
+              <div class="user-text">
+                <p class="md:text-2xl mb-6">
+                  "This should be used to tell a story an include any
+                  testimonials you might have about your product or service for
+                  your clients!"
+                </p>
+                <h4 class="font-bold text-secondary mb-1">Markin Nesus</h4>
+                <p>IOS Developer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="text-center mb-6 mt-0">
+        <p class="font-bold">&copy; 2025 All rights are reserved</p>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      const hamburger = document.getElementById('hamburger')
+      const menu = document.getElementById('menu')
+      const hlink = document.querySelectorAll('#hlink')
+      const fasolid = document.querySelector('.fa-solid')
+
+      hamburger.addEventListener('click', () => {
+        menu.classList.toggle('hidden')
+        fasolid.classList.toggle('fa-xmark')
+      })
+
+      hlink.forEach(link => {
+        link.addEventListener('click', () => {
+          if (window.innerWidth < 1024) {
+            menu.classList.toggle('hidden')
+            fasolid.classList.toggle('fa-xmark')
+          }
+        })
+      })
+
+      window.addEventListener('resize', () => {
+        if (window.innerWidth >= 1024) {
+          menu.classList.add('hidden')
+          fasolid.classList.remove('fa-xmark')
+        }
+      })
+
+      AOS.init({
+        duration: 1000,
+        once: false,
+        mirror: true,
+        easing: 'ease-in-out',
+        offset: 120
+      })
+
+      // TESTIMONIAL
+
+      const userTexts = document.getElementsByClassName('user-text')
+      const userPics = document.getElementsByClassName('user-pic')
+
+      function showReview() {
+        for (let userPic of userPics) {
+          userPic.classList.remove('active-pic')
+        }
+        for (let userText of userTexts) {
+          userText.classList.remove('active-text')
+        }
+        let i = Array.from(userPics).indexOf(event.target)
+        userPics[i].classList.add('active-pic')
+        userTexts[i].classList.add('active-text')
+      }
+
+      const testimonialSection = document.getElementById('testimonial')
+
+      testimonialSection.addEventListener('click', function (e) {
+        // If click target does NOT have class 'user-pic', go to nav
+        if (!e.target.classList.contains('user-pic')) {
+          location.href = '#nav'
+        }
+      })
+    </script>
+  </body>
+</html>
