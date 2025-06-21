@@ -1,4 +1,4 @@
-# 💸 LightCode – Responsive Banking Website Landing Page
+# 💸 LightCode – Responsive Banking Website Landing <span style="text-center">Page</span>
 
 <div align="center">
   <img src="src/images/screen.png" alt="LightCode Banner" width="650" height='350' />
